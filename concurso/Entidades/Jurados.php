@@ -6,4 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 class Jurados extends Model
 {
     protected $table = 'jurados';
+    protected $timestamp = false;
 }

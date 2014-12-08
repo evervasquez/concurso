@@ -17,4 +17,10 @@ class juradosControlador extends Controlador
         return print_r(json_encode($this->juradoRepo->save()));
     }
 
+    public function nuevo()
+    {
+        $datos = $_POST;
+        $this->juradoRepo = new JuradosRepositorio();
+        return $this->juradoRepo->nuevo($datos);
+    }
 } 
